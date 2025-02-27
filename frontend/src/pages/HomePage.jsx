@@ -5,7 +5,7 @@ import {
   AddCircle as PlusCircleIcon,
   Refresh as RefreshCwIcon,
 } from "@mui/icons-material";
-import ProductCard from "../components/ProductCard";
+import ProductCard from "../components/productCard";
 import AddProductModal from "../components/AddProductModal";
 
 export default function HomePage({ searchQuery }) {
