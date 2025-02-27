@@ -10,7 +10,7 @@ export const productStore = create((set, get) => ({
   error: null,
   currentProduct: null,
 
-  // form state
+  // Form state
   formData: {
     name: "",
     price: "",
