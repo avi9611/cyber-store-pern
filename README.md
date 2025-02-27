@@ -18,9 +18,8 @@ Cyber Store is a simple e-commerce platform designed for gaming enthusiasts. It 
 - **Security Features**: Rate Limiting, Bot Detection
 
 ## Demo Images
-![App Screenshot](taskmanager1.png)
-![App Screenshot](taskmanager2.png)
-![App Screenshot](taskmanager3.png)
+![App Screenshot](home.png)
+![App Screenshot](product.png)
 
 ## Installation & Setup
 ### Prerequisites
