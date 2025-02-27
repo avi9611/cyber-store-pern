@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-icon-link {
+    @apply p-2 text-gray-600 hover:text-indigo-600 hover:bg-gray-100 rounded-full transition-colors duration-200;
+  }
+}
+@keyframes rainbowAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@layer utilities {
+  .cyberpunk-bg {
+    background: radial-gradient(circle, rgba(20, 20, 20, 1) 10%, rgba(10, 10, 10, 1) 60%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cyberpunk-bg::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+      from 180deg at 50% 50%,
+      #ff00ff 0deg,
+      #00ffff 60deg,
+      #ffcc00 120deg,
+      #ff0000 180deg,
+      #ff00ff 240deg,
+      #00ffff 300deg,
+      #ffcc00 360deg
+    );
+    filter: blur(100px);
+    opacity: 0.2;
+    animation: neonPulse 8s linear infinite;
+  }
+
+  @keyframes neonPulse {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .neon-border {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: linear-gradient(black, black) padding-box,
+      linear-gradient(45deg, #ff00ff, #00ffff, #ffcc00, #ff0000) border-box;
+  }
+}
+
+/*    ADD PRODUCT MODAL CSS */
+/* Modal Container */ 
+.add-product-modal .MuiPaper-root {
+  background: linear-gradient(135deg, #1a1a1a, #3d0000, #800000);
+  border: 2px solid #ff1744;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(255, 23, 68, 0.7);
+}
+
+.add-product-modal .MuiDialogTitle-root {
+  position: relative;
+}
+
+/* Dialog Title */
+.add-product-modal-title {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+}
+
+/* Close Button */
+.add-product-modal .MuiDialogTitle-root .add-product-modal-close {
+  position: absolute !important;
+  right: 8px;
+  top: 8px;
+  color: #ff1744 !important;
+}
+
+.add-product-modal .MuiDialogTitle-root .add-product-modal-close:hover {
+  color: #ff5252 !important;
+}
+
+/* Input Fields */
+.add-product-modal .MuiOutlinedInput-root {
+  color: #fff !important; 
+}
+
+.add-product-modal .MuiOutlinedInput-notchedOutline {
+  border-color: #ff1744 !important;
+}
+
+.add-product-modal .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #ff5252 !important;
+}
+
+.add-product-modal .MuiInputLabel-root {
+  color: gray !important; 
+}
+
+/* Dialog Actions */
+.add-product-modal-actions {
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Buttons */
+.add-product-cancel {
+  background: transparent;
+  color: gray;
+  border: 1px solid gray;
+}
+
+.add-product-cancel:hover {
+  background: #333;
+}
+
+.add-product-submit {
+  background: linear-gradient(45deg, #ff1744, #ff5252);
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 10px rgba(255, 23, 68, 0.7);
+}
+
+.add-product-submit:hover {
+  background: linear-gradient(45deg, #ff5252, #ff1744);
+}
+
+
+
+
